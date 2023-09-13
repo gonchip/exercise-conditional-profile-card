@@ -45,17 +45,17 @@ function render(variables = {}) {
     variables.country == null ? "Country" : variables.country
   }</h3>
           <ul class="${ulClass}">
-            <li><a href="https://twitter.com/${
-              variables.twitter
+            <li><a href="https://twitter.com${
+              variables.twitter == null ? "" : variables.twitter
             }"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/${
-              variables.github
+            <li><a href="https://github.com${
+              variables.github == "alesanchezr" ? "" : variables.github
             }"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/${
-              variables.linkedin
+            <li><a href="https://linkedin.com${
+              variables.linkedin == null ? "" : variables.linkedin
             }"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/${
-              variables.instagram
+            <li><a href="https://instagram.com${
+              variables.instagram == null ? "" : variables.instagram
             }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
